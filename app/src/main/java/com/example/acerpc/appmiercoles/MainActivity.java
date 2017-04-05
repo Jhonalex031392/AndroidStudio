@@ -1,5 +1,6 @@
 package com.example.acerpc.appmiercoles;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         vista1.setText("Cambiamos el texto con el boton");
+        Intent intent1 = new Intent(this, Activity2.class);
+        startActivity(intent1);
         vista1.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
     }
 }
